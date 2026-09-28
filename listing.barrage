@@ -1,0 +1,48 @@
+# Skill: Subsumption Architecture
+
+> A Grok skill for a priority stack: Provide air, Eat, Win, Talk. Higher layers stop lower ones.
+
+## Purpose
+Explain the four-layer stack so anyone can see life support beats mission, and mission beats talk. Source: fitzyracing1/skill-subsumption-architecture.
+
+## How it works (plain English)
+1. Provide air first.
+2. Eat second.
+3. Win the mission third.
+4. Talk last, and only if the upper layers are quiet.
+
+## Key ideas
+- Subsumption (a higher need can stop a lower one)
+- Provide air (keep the environment livable)
+- Eat (get energy)
+- Win (do the assigned job)
+- Talk (report and listen)
+
+## The actual code
+```
+# source: fitzyracing1/skill-subsumption-architecture
+provide_air()   # first
+eat()           # second
+win()           # third
+talk()          # last
+```
+
+## Line-by-line translation
+1. provide_air() → “keep air and environment first”
+2. eat() → “get energy next”
+3. win() → “do the job after that”
+4. talk() → “speak only when the rest is handled”
+
+## Decisions the program makes
+- If air is missing → stop eat, win, and talk
+- If energy is missing → stop win and talk
+- If the mission is active → stop talk
+
+## What a person would notice
+The robot will not chat while it cannot breathe.
+
+## Current status
+Barrage clone.
+
+## Next possible steps
+Open the HTML skill in the source.
